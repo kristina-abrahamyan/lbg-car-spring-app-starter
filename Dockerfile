@@ -15,4 +15,6 @@ COPY src/ /app/src/
 
 RUN mvn package
 
+EXPOSE 8000
+
 CMD ["java", "-jar", "target/my-app.jar"]
